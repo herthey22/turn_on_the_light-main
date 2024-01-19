@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>turn on the light using const variables </title>
+</head>
+<body>
+    <!--instrustions
+     1. create  inline script tag: <script type ="text/javascript"</script.
+     2. give the button1 id of mBtn1
+     3. use J.S document to target myBtn1 id and store it in a const.variable called 'btn1'
+     4. give the button2 id of mBtn2.
+     5. use J.S document to target myBtn2 id and store it in a const.variable called 'btn2'.
+     6. add Event listner to each of the button and replace the img scr attribute.
+     7. make sure you remove the onclick attribute in the two buttons 
+    
+    -->
+
+    <!--SOLUTION-->
+    <button type="button" id="myBtn1"> Turn on the Light</button>
+
+    <img id="myImage" src="./pic_bulboff.gif" style="width: 100px;">
+
+    <button type="button" id="myBtn2">Turn off the Light </button>
+
+    <script type="text/javascript">
+        const btn1 = document.getElementById('myBtn1').addEventListener('click',  Turnonthelight)
+        const btn2 = document.getElementById('myBtn2').addEventListener('click',  Turnoffthelight)
+        
+        function Turnonthelight(){
+            document.getElementById('myImage').src="./pic_bulbon.gif"
+        }
+
+        function Turnoffthelight(){
+            document.getElementById('myImage').src="./pic_bulboff.gif"
+        }
+   </script>
+</body>
+</html>

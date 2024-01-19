@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn on the light using on click script</title>
+</head>
+<body>
+    <button type="button" onclick="onBulb()"> On Bulb</button>
+
+    <img id="demo" src="./pic_bulboff.gif" style="width: 100px;">
+
+    <button type="button" onclick="offBulb()"> off Bulb </button>
+
+    <script type="text/javascript">
+        function onBulb(){
+            document.getElementById('demo').src="./pic_bulbon.gif"
+        }
+
+        function offBulb(){
+            document.getElementById('demo').src="./pic_bulboff.gif"
+        }
+   </script>
+</body>
+</html>
